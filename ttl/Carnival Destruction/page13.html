@@ -1,0 +1,127 @@
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+    <link href="animate.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="textillate-master/assets/jquery.lettering.js" rel="stylesheet"></script>
+    <script src="textillate-master/jquery.textillate.js"></script>
+
+    <link href="textillate-master/assets/animate.css" rel="stylesheet">
+    <link href="magic-master/magic.css" rel="stylesheet">
+    <script src="functions.js"></script>
+    <style>
+
+        body{
+            background-color: #0078c3;
+            padding-top: 0;
+            margin-top:0;
+        }
+        .delay{
+            animation-delay: 3s;
+        }
+
+        .delay2{
+            animation-delay: 5s;
+            animation-duration: 5s;
+        }
+
+        .delay3{
+            animation-delay: 1s;
+        }
+
+        .delay4{
+            animation-delay: 2s;
+        }
+
+        hr {
+            display: block;
+            margin-top: 1.0em;
+            margin-bottom: 0.5em;
+            border-width: 2px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+
+    </style>
+</head>
+<body onload="pause();">
+
+
+
+
+
+<h1 style="padding-top: 50px; text-align:center; padding-left: 100px; color:white;font-family: 'Courgette', cursive;"> Introducing your Carnival Triumph Floor Plans</h1>
+<div style="padding-top: 0; text-align:center; padding-left: 100px;" class="container-absolute">
+
+    <div class="row" style="padding-left: 20px;">
+
+
+        <div class="col-lg-6" style="color:white; text-align: center; font-family: 'Courgette', cursive; width: 1500px; height: 500px;">
+            <img class="animated fadeInLeft" src="triumph%20floor%20plans.JPG" style="text-align:center; padding-left: 20px; width: 1200px; height: 500px;"/>
+            <hr>
+            <h2>Carnival Breeze</h2>
+            <h3>Deck: 11 <br> Capacity: 2,754 guests</h3>
+        </div>
+
+        </div>
+
+        <!--<h1 id="txt1" class="animated fadeInLeft" style="float: right; font-size: 50px; padding-top: 20px;"></h1>-->
+        <!--<h1 id="txt4" class="slideInDown"></h1>-->
+        <!--<h1 id="txt3" class="animated lightSpeedIn overPadding"></h1>-->
+
+        <!--<h2 id="txt2" class="animated fadeInLeft overPadding">Your #1 digital solution </h2>-->
+        <!--<h1 class="tlt" id="tlt" style="display:none; padding-left: 100px;">-->
+        <!--<ul class="texts">-->
+        <!--<li data-out-effect="fadeOut" data-out-shuffle="true"></li>-->
+        <!--<li data-in-effect="fadeIn">Connecting your customers to you</li>-->
+        <!--</ul>-->
+        <!--</h1>-->
+        <script>
+
+            function Redirect()
+            {
+                window.location="page6.html";
+            }
+            setTimeout('Redirect()', 25000);
+
+
+
+            setInterval(function(){
+                document.getElementById('tlt1').style.display = "block";
+                tlt1();
+            }, 5000);
+            setInterval(function(){
+                document.getElementById('tlt2').style.display = "block";
+                tlt1();
+            }, 5000);
+
+            function tlt1(){
+
+                $('.tlt1').textillate({ in: { effect: 'rollIn'} });
+            }
+
+
+        </script>
+
+
+
+</body>
+</html>
+

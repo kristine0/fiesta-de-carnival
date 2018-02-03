@@ -1,0 +1,142 @@
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+    <link href="animate.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="textillate-master/assets/jquery.lettering.js" rel="stylesheet"></script>
+    <script src="textillate-master/jquery.textillate.js"></script>
+
+    <link href="textillate-master/assets/animate.css" rel="stylesheet">
+    <link href="magic-master/magic.css" rel="stylesheet">
+    <script src="functions.js"></script>
+    <style>
+
+        body{
+            background-color: #0078c3;
+            padding-top: 0;
+            margin-top:0;
+        }
+        .delay{
+            animation-delay: 3s;
+        }
+
+        .delay2{
+            animation-delay: 5s;
+            animation-duration: 5s;
+        }
+
+        .delay3{
+            animation-delay: 1s;
+        }
+
+        .delay4{
+            animation-delay: 2s;
+        }
+
+        hr {
+            display: block;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-width: 2px;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+
+
+    </style>
+</head>
+<body onload="pause();">
+
+
+
+
+<img id="Logo" class="animated flash delay2" style="float:top; padding-left: 50px; width:500px; height: 300px;" src="carnivallogo.png"/>
+<h1 style="padding-top: 30px; text-align:center; color:white;font-family: 'Courgette', cursive;"> About Carnival Cruise</h1>
+<div style="padding-top: 0; text-align:center;" class="container-absolute">
+
+    <div class="row" style="padding-left: 15px;">
+
+
+        <div class="col-lg-6" style="color:white;font-family: 'Courgette', cursive; width: 500px; height: 300px;">
+            <img class="animated fadeInLeft" src="halfmooncay.jpg" style="width: 500px; height: 300px;"/>
+            <hr>
+            <h2>Who We Are</h2>
+            <h3>Growing since our founding in 1972, Carnival Cruise Line “The World’s Most Popular Cruise Line”  now carries millions of passengers every year.</h3>
+        </div>
+        <div class="col-lg-6" style="color:white;font-family: 'Courgette', cursive; width: 500px; height: 300px;">
+            <img class="animated fadeInLeft" src="bermuda1.jpg" style="width: 500px; height: 300px;"/>
+            <hr>
+            <h2>What We DO</h2>
+            <h3>Our 24 ships operate 3- to 16-day voyages, departing from every coast in the U.S., plus from Canada, Puerto Rico, Europe and Barbados.
+                While we are best known for Caribbean cruises, we sail to other exotic and amazing destinations like Mexico, Alaska, The Bahamas, Cuba, Hawaii and the Mediterranean. </h3>
+        </div>
+        <div class="col-lg-6" style="color:white;font-family: 'Courgette', cursive; width: 500px; height: 300px;">
+            <img class="animated fadeInLeft" src="carnival-mexico-region-image-1.jpg" style="width: 500px; height: 300px;"/>
+            <hr>
+            <h2>How To Find Us</h2>
+            <h3>To contact us by phone, call 1-800-CARNIVAL
+            <br>Find us on Instagram, @carnival<br>
+            Find us on Twitter, @CarnivalCruise</h3>
+
+        </div>
+
+
+        <!--<h1 id="txt1" class="animated fadeInLeft" style="float: right; font-size: 50px; padding-top: 20px;"></h1>-->
+        <!--<h1 id="txt4" class="slideInDown"></h1>-->
+        <!--<h1 id="txt3" class="animated lightSpeedIn overPadding"></h1>-->
+
+        <!--<h2 id="txt2" class="animated fadeInLeft overPadding">Your #1 digital solution </h2>-->
+        <!--<h1 class="tlt" id="tlt" style="display:none; padding-left: 100px;">-->
+        <!--<ul class="texts">-->
+        <!--<li data-out-effect="fadeOut" data-out-shuffle="true"></li>-->
+        <!--<li data-in-effect="fadeIn">Connecting your customers to you</li>-->
+        <!--</ul>-->
+        <!--</h1>-->
+        <script>
+
+            function Redirect()
+            {
+                window.location="page1.html";
+            }
+            setTimeout('Redirect()', 25000);
+
+
+
+            setInterval(function(){
+                document.getElementById('tlt1').style.display = "block";
+                tlt1();
+            }, 5000);
+            setInterval(function(){
+                document.getElementById('tlt2').style.display = "block";
+                tlt1();
+            }, 5000);
+
+            function tlt1(){
+
+                $('.tlt1').textillate({ in: { effect: 'rollIn'} });
+            }
+
+
+        </script>
+
+
+
+</body>
+</html>
+

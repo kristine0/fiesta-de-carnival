@@ -1,0 +1,165 @@
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+    <link href="animate.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="textillate-master/assets/jquery.lettering.js" rel="stylesheet"></script>
+    <script src="textillate-master/jquery.textillate.js"></script>
+
+    <link href="textillate-master/assets/animate.css" rel="stylesheet">
+    <link href="magic-master/magic.css" rel="stylesheet">
+    <script src="functions.js"></script>
+    <style>
+
+        .delay{
+            animation-delay: 3s;
+        }
+
+        hr {
+            display: block;
+            margin-top: 20%;
+            margin-bottom: 0.5em;
+            border-width: 2px;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+        body{
+            background-color: #0078c3;
+        }
+
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            text-align:center;
+            border-bottom: 5px solid red;
+            overflow: hidden;
+            box-shadow: 0px 1px 0px rgba(0, 0, 0, .5);
+            animation: reveal 6s linear forwards;
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+            font-size: 3em;
+            color: red;
+            text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+            text-transform: uppercase;
+        }
+        @keyframes reveal {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+            30% {
+                width: 500px;
+                height: 0;
+            }
+            60% {
+                width: 500px;
+                height: 70px;
+            }
+            80% {
+                width: 500px;
+                height: 70px;
+                box-shadow: 0px 1px 0px rgba(0, 0, 0, .5);
+            }
+            100% {
+                width: 100%;
+                height: 70px;
+                box-shadow: 0px 1px 0px rgba(0, 0, 0, .5);
+            }
+        }
+        .delay{
+            animation-delay: 5s;
+        }
+
+    </style>
+</head>
+<body onload="pause();">
+
+<div id="box"class="box">
+    <h1 style="color:white; font-family: 'Courgette', cursive; font-size:50px;">
+        Excursion
+    </h1>
+
+</div>
+<h1 id="menu"class="animated fadeInDown delay" style="color:white; position:absolute; top: 58%; left: 50%; font-family: 'Courgette', cursive; font-size:50px;">
+    Alaska
+</h1>
+
+
+
+
+<div id="hidden7" class="animated fadeInLeft" style="display:none; text-align:center;">
+    <img src="alaska_excursion.JPG" style="padding-top: 80px; width: 80%; height: 700px;"/>
+</div>
+
+<div id="hidden8" class="animated fadeInRight" style="display:none; text-align:center;">
+    <img src="alaska_excursion2.JPG" style="width: 85%; height: 700px;"/>
+</div>
+
+<!--<h1 id="txt1" class="animated fadeInLeft" style="float: right; font-size: 50px; padding-top: 20px;"></h1>-->
+<!--<h1 id="txt4" class="slideInDown"></h1>-->
+<!--<h1 id="txt3" class="animated lightSpeedIn overPadding"></h1>-->
+
+<!--<h2 id="txt2" class="animated fadeInLeft overPadding">Your #1 digital solution </h2>-->
+<!--<h1 class="tlt" id="tlt" style="display:none; padding-left: 100px;">-->
+<!--<ul class="texts">-->
+<!--<li data-out-effect="fadeOut" data-out-shuffle="true"></li>-->
+<!--<li data-in-effect="fadeIn">Connecting your customers to you</li>-->
+<!--</ul>-->
+<!--</h1>-->
+<script>
+
+    function Redirect()
+    {
+        window.location="page8.html";
+    }
+    setTimeout('Redirect()', 30000);
+
+
+
+
+
+    setTimeout(function(){
+        document.getElementById('box').style.display = "none";
+        document.getElementById('menu').style.display = "none";
+        document.getElementById('hidden7').style.display = "block";
+    }, 11000);
+
+
+
+    setTimeout(function(){
+        document.getElementById('hidden7').style.display = "none";
+        document.getElementById('hidden8').style.display = "block";
+    }, 20000);
+
+
+
+</script>
+
+
+
+</body>
+</html>

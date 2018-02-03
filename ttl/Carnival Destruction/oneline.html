@@ -1,0 +1,129 @@
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+    <link href="animate.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="textillate-master/assets/jquery.lettering.js" rel="stylesheet"></script>
+    <script src="textillate-master/jquery.textillate.js"></script>
+
+    <link href="textillate-master/assets/animate.css" rel="stylesheet">
+    <link href="magic-master/magic.css" rel="stylesheet">
+    <script src="functions.js"></script>
+    <style>
+
+        body{
+            background-color: #0078c3;
+            padding-top: 0;
+            margin-top:0;
+        }
+        .delay{
+            animation-delay: 10s;
+        }
+
+        .delay2{
+            animation-delay: 5s;
+            animation-duration: 5s;
+        }
+
+        .delay3{
+            animation-delay: 1s;
+        }
+
+        .delay4{
+            animation-delay: 2s;
+        }
+
+        hr {
+            display: block;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-width: 2px;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+
+
+    </style>
+</head>
+<body onload="pause();">
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img id="Logo" class="animated flash delay2" style="float:top; padding-left: 50px; width:400px; height: 300px;" src="carnivallogo.png"/>
+        </div>
+
+        <div class="col-md-8">
+            <h1 style="padding-top: 40px; text-align:center; color:white;font-family: 'Courgette', cursive;"> Introducing your Carnival Cruise Line</h1>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<h2 id="tlt2" class="animated fadeIn" style="color: white; font-family: 'Courgette', cursive;">Departing from Tampa, Fl., New Orleans, Mobile, Alabama, New York, Baltimore Maryland, San Juan Puerto Rico, and more </h2>
+
+<!--<h1 id="txt1" class="animated fadeInLeft" style="float: right; font-size: 50px; padding-top: 20px;"></h1>-->
+<!--<h1 id="txt4" class="slideInDown"></h1>-->
+<!--<h1 id="txt3" class="animated lightSpeedIn overPadding"></h1>-->
+
+<!--<h2 id="txt2" class="animated fadeInLeft overPadding">Your #1 digital solution </h2>-->
+<!--<h1 class="tlt" id="tlt" style="display:none; padding-left: 100px;">-->
+<!--<ul class="texts">-->
+<!--<li data-out-effect="fadeOut" data-out-shuffle="true"></li>-->
+<!--<li data-in-effect="fadeIn">Connecting your customers to you</li>-->
+<!--</ul>-->
+<!--</h1>-->
+<script>
+
+    function Redirect()
+    {
+        window.location="aboutcarnival.html";
+    }
+    setTimeout('Redirect()', 25000);
+
+
+
+    setTimeout(timeout(), 7000);
+
+
+    function timeout(){
+        document.getElementById('tlt').style.display = 'none';
+        document.getELementById('boatCol').style.display = "block";
+    }
+
+
+
+
+    function tlt1(){
+
+        $('.tlt1').textillate({ in: { effect: 'rollIn'} });
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
+
